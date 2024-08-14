@@ -17,10 +17,10 @@ DuckHunter is a robust tool specifically designed to detect subdomain takeover v
 
 Clone the repository and navigate to the project directory:
 
-\`\`\`bash
+ ```bash
 git clone https://github.com/Acorzo1983/DuckHunter.git
 cd DuckHunter
-\`\`\`
+ ```
 
 ## Usage
 
@@ -30,25 +30,25 @@ You can run DuckHunter with various options:
 
 To display the help message:
 
-\`\`\`bash
+```bash
 go run duckhunter.go -h
-\`\`\`
+```
 
 ### Checking a List of Subdomains
 
 To check a list of subdomains provided in a file:
 
-\`\`\`bash
+```bash
 go run duckhunter.go -l subdomains.txt -o report.txt
-\`\`\`
+```
 
 ### Checking a Single Domain
 
 To check a single domain:
 
-\`\`\`bash
+```bash
 go run duckhunter.go -d example.com -o report.txt
-\`\`\`
+```
 
 ### Example: Using DuckHunter with Subfinder
 
@@ -56,21 +56,21 @@ Subfinder is a subdomain discovery tool that can be used to generate a list of s
 
 1. **Install Subfinder** (if you haven't already):
 
-    \`\`\`bash
+    ```bash
     go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-    \`\`\`
+    ```
 
 2. **Find Subdomains** for a given domain (e.g., `example.com`):
 
-    \`\`\`bash
+    ```bash
     subfinder -d example.com -o subdomains.txt
-    \`\`\`
+    ```
 
 3. **Run DuckHunter** to check for vulnerabilities:
 
-    \`\`\`bash
+    ```bash
     go run duckhunter.go -l subdomains.txt -o report.txt
-    \`\`\`
+    ```
 
 ## Output
 
@@ -82,9 +82,9 @@ The results are color-coded in the terminal and saved to the specified output fi
 
 ## Example
 
-\`\`\`bash
+```bash
 go run duckhunter.go -l subdomains.txt -o report.txt
-\`\`\`
+```
 
 This command will read the subdomains from \`subdomains.txt\`, check for vulnerabilities, and save the report to \`report.txt\`.
 
