@@ -1,7 +1,6 @@
-
 # DuckHunter
 
-DuckHunter is a powerful tool designed to identify subdomain takeover vulnerabilities. It resolves DNS for given subdomains, checks for common patterns indicative of a potential takeover, and generates a comprehensive report. The tool supports both single-domain and multi-domain (from a list) checks, with color-coded output for easy interpretation.
+DuckHunter is a robust tool specifically designed to detect subdomain takeover vulnerabilities, particularly those related to the "Sitting Duck" vulnerability that has put over 1 million domains at risk. By resolving DNS for specified subdomains and analyzing them for patterns associated with potential takeovers, DuckHunter generates detailed reports that help you secure your domains. Whether you're checking a single domain or an extensive list, DuckHunter's color-coded output ensures that results are easy to understand and act upon.
 
 ## Features
 
